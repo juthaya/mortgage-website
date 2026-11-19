@@ -170,3 +170,95 @@ footer {
     width: 100%;
   }
 }
+
+/* Mortgage Services Section */
+.services {
+  padding: 80px 8%;
+  background-color: #f3f7fb;
+}
+
+/* Section Heading */
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  color: #123456;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  font-size: 18px;
+  color: #475569;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Individual Cards */
+.service-card {
+  background-color: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: #123456;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #475569;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.service-card a {
+  text-decoration: none;
+  color: #2563a6;
+  font-weight: bold;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .services {
+    padding: 50px 5%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+}
