@@ -64,18 +64,6 @@ body {
   }
 }
 
-/**********/
-/* FOOTER */
-/**********/
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #123456;
-  color: white;
-  margin-top: 60px;
-}
-
 /********/
 /* HERO */
 /********/
@@ -387,5 +375,154 @@ footer {
 
   .about-content p {
     font-size: 16px;
+  }
+}
+
+/******************/
+/* CALL TO ACTION */
+/******************/
+.consultation-cta {
+  background-color: #123456;
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 38px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e2e8f0;
+  margin-bottom: 30px;
+}
+
+/* CTA Button */
+.btn-cta {
+  background-color: #ffffff;
+  color: #123456;
+  border: 2px solid #ffffff;
+}
+
+.btn-cta:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Consultation CTA - Mobile */
+@media (max-width: 768px) {
+  .consultation-cta {
+    padding: 60px 5%;
+  }
+
+  .cta-content h2 {
+    font-size: 28px;
+  }
+
+  .cta-content p {
+    font-size: 16px;
+  }
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+.site-footer {
+  background-color: #0b223b;
+  color: #ffffff;
+  padding: 30px 8% 10px;
+  margin-top: 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 20px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Copyright Section */
+.footer-bottom {
+  border-top: 1px solid #334155;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Footer - Tablet */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Footer - Mobile */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 50px 5% 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
   }
 }
