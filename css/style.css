@@ -1,4 +1,7 @@
-/* Global styles */
+/******************/
+/* GLOBAL STYLING */
+/******************/
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +15,10 @@ body {
   background-color: #fff;
 }
 
-/* Navigation */
+/**************/
+/* NAVIGATION */
+/**************/
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,15 +50,6 @@ body {
   color: #90caf9;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #123456;
-  color: white;
-  margin-top: 60px;
-}
-
 /* Mobile navigation */
 @media (max-width: 768px) {
   .navbar {
@@ -67,7 +64,22 @@ footer {
   }
 }
 
-/* Hero Section */
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #123456;
+  color: white;
+  margin-top: 60px;
+}
+
+/********/
+/* HERO */
+/********/
+
 .hero {
   display: flex;
   align-items: center;
@@ -171,7 +183,10 @@ footer {
   }
 }
 
-/* Mortgage Services Section */
+/**********************/
+/* MORTGAGE SERVICES  */
+/**********************/
+
 .services {
   padding: 80px 8%;
   background-color: #f3f7fb;
@@ -260,5 +275,117 @@ footer {
 
   .service-card {
     padding: 25px;
+  }
+}
+
+/************/
+/* ABOUT US */
+/************/
+
+.about-preview {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 100px 8%;
+  background-color: #ffffff;
+}
+
+/* About Image */
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* About Content */
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 38px;
+  line-height: 1.3;
+  color: #123456;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.about-content h3 {
+  font-size: 22px;
+  color: #123456;
+  margin-bottom: 20px;
+}
+
+/* Benefits List */
+.about-benefits {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.about-benefits li {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #475569;
+}
+
+.about-benefits li::before {
+  content: "✓";
+  color: #16a34a;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* About Section - Tablet and Mobile */
+@media (max-width: 992px) {
+  .about-preview {
+    flex-direction: column;
+    padding: 60px 5%;
+    gap: 40px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    height: 350px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-preview {
+    padding: 50px 5%;
+  }
+
+  .about-image img {
+    height: 250px;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 16px;
   }
 }
