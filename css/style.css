@@ -692,3 +692,63 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Detailed Services Page */
+.services-detail {
+  background-color: #ffffff;
+}
+
+/* Individual Service Sections */
+.service-detail {
+  padding: 65px 8%;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Alternate section backgrounds */
+.service-detail:nth-child(even) {
+  background-color: #f3f7fb;
+}
+
+.service-detail-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.service-detail h2 {
+  font-size: 32px;
+  color: #123456;
+  margin-bottom: 20px;
+}
+
+.service-detail p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.service-detail .btn {
+  margin-top: 10px;
+}
+
+/* Services Page - Tablet */
+@media (max-width: 992px) {
+  .service-detail {
+    padding: 55px 5%;
+  }
+}
+
+/* Services Page - Mobile */
+@media (max-width: 600px) {
+  .service-detail {
+    padding: 40px 5%;
+  }
+
+  .service-detail h2 {
+    font-size: 26px;
+  }
+
+  .service-detail p {
+    font-size: 16px;
+  }
+}
